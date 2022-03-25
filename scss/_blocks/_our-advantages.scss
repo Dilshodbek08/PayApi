@@ -1,0 +1,110 @@
+.our-advantages__wrapper{
+  margin: 0;
+  padding: 0;
+  padding-top: 80px;
+}
+
+.our-advantages__list{
+  margin-left: auto;
+  margin-right: auto;
+  @include list;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.our-advantages__personal{
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  text-decoration: none;
+  position: relative;
+}
+
+.our-advantages__personal:before{
+  width: 106px;
+  height: 106px;
+  bottom: 170px;
+  right: 110px;
+  content: "";
+  position: absolute;
+  background-image: url("../../img/salary-image.png");
+  background-repeat: no-repeat;
+}
+
+.our-advantages__banking{
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  text-decoration: none;
+  position: relative;
+}
+
+.our-advantages__banking:before{
+  width: 106px;
+  height: 106px;
+  bottom: 170px;
+  right: 110px;
+  content: "";
+  position: absolute;
+  background-image: url("../../img/statistics.png");
+  background-repeat: no-repeat;
+}
+
+.our-advantages__consumer{
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  text-decoration: none;
+  position: relative;
+}
+
+.our-advantages__consumer:before{
+  width: 106px;
+  height: 106px;
+  bottom: 170px;
+  right: 110px;
+  content: "";
+  position: absolute;
+  background-image: url("../../img/Plastic-card.png");
+  background-repeat: no-repeat;
+}
+
+.our-advantages__heading{
+  margin: 0;
+  padding: 0;
+  padding-bottom: 16px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: -0.1px;
+  color: #36536B;
+}
+
+.our-advantages__text{
+  margin: 0;
+  padding: 0;
+}
+
+// RESPONSIVE
+
+@media only screen and (max-width: 770px){
+  .our-advantages__wrapper{
+    margin-top: -110px;
+    padding: 0;
+  }
+  .our-advantages__list{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .our-advantages__consumer::before, .our-advantages__banking::before,.our-advantages__personal::before{
+    background-image: none;
+  }
+  .our-advantages__consumer, .our-advantages__banking,.our-advantages__personal{
+    max-width: 550px;
+    margin-bottom: 40px;
+  }
+}

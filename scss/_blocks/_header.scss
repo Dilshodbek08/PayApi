@@ -1,0 +1,81 @@
+.header{
+  margin: 0;
+  padding: 0;
+}
+
+.header__wrapper{
+  margin: 0;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__navbar-box{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.header__logo-link{
+  @include logo-link;
+}
+
+.header__hamburg-btn{
+  display: none;
+}
+
+.header__logo{
+  @include logo-img;
+  width: 135px;
+  height: 38px;
+  transition: all 0.3s ease-in-out; 
+}
+
+.header__logo:hover{
+  transform: scale(1.05);
+}
+
+.header__Schedule-link{
+  @include item;
+  padding: 15px 25px;
+  color: $link-water-white;
+  background-color: $dark-pink;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  border-radius: 24px;
+  transition: color 0.3s ease,
+  background-color 0.3s ease;
+}
+
+.header__Schedule-link:hover{
+  color: $link-water-white;
+  background-color: $light-pink;
+}
+
+.header__Schedule-link:active{
+  color: $link-water-white;
+  background-color: rgba(186, 66, 112,0.7);
+}
+
+// RESPONSIVE
+
+@media only screen and (max-width: 630px){
+  .header__Schedule-link{
+    display: none;
+  }
+
+  .header__hamburg-btn{
+    margin: 0;
+    padding: 0;
+    display: block;
+    background-color: transparent;
+    border: none;
+  }
+
+  .header__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
