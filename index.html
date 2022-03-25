@@ -10,46 +10,251 @@
 </head>
 
 <body>
-  <!-- VISUALLY HIDDEN -->
-  <h1 class="visually-hidden">This site about Api's. It works with famous IT companies like Google,Microsoft,Tesla and others.</h1>
+  <!--============================================= VISUALLY HIDDEN =============================================-->
+  <h1 class="visually-hidden">This site about Api's. It works with famous IT companies like Google,Microsoft,Tesla and
+    others.</h1>
 
-  <!-- SITE HEADER -->
+  <!--============================================= SITE HEADER =============================================-->
   <header class="header">
     <div class="container">
       <div class="header__wrapper">
-        <a class="header__logo-link" href="./index.html">
-          <img class="header__logo" src="./img/PayApi-logo.svg" alt="site-logo" width="135" height="38">
-        </a>
+        <div class="header__navbar-box">
+          <a class="header__logo-link" href="./index.html">
+            <img class="header__logo" src="./img/PayApi-logo.svg" alt="site-logo" width="135" height="38">
+          </a>
+  
+          <nav class="navbar">
+            <ul class="navbar__list">
+              <li class="navbar__item">
+                <a class="navbar__item-link" href="#">Pricing</a>
+              </li>
+  
+              <li class="navbar__item">
+                <a class="navbar__item-link" href="#">About</a>
+              </li>
+  
+              <li class="navbar__item">
+                <a class="navbar__item-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
 
-        <nav class="navbar">
-          <ul class="navbar__list">
-            <li class="navbar__item">
-              <a class="navbar__item-link" href="#">Pricing</a>
-            </li>
-
-            <li class="navbar__item">
-              <a class="navbar__item-link" href="#">About</a>
-            </li>
-
-            <li class="navbar__item">
-              <a class="navbar__item-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <button class="header__button" type="button">Schedule a Demo</button>
+        <a class="header__Schedule-link" href="#">Schedule a Demo</a>
       </div>
     </div>
   </header>
 
-  <!-- SITE MAIN -->
+  <!--============================================= SITE MAIN =============================================-->
   <main>
+    <!--============================================= SECTION HERO =============================================-->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__wrapper">
+          <div class="hero__content-box">
+            <h2 class="hero__heading">Start building with our APIs for absolutely free.</h2>
 
+            <form class="form" action="https://echo.htmlacademy.ru" method="POST" target="_blank">
+              <label class="form__label" for="email">
+                <input class="form__input" type="email" name="email" placeholder="Enter email address" required
+                  autocomplete="off">
+                <button class="form__submit-btn" type="submit">Schedule a Demo</button>
+              </label>
+            </form>
+            <span>Have any questions?</span>
+            <span> <a href="#">Contact Us</a></span>
+          </div>
+
+          <img src="./img/Phone-payapi.png" alt="hero-image" width="283" height="500">
+        </div>
+      </div>
+    </section>
+
+    <!--============================================= SECTION ABOUT =============================================-->
+    <section class="about">
+      <div class="container">
+        <div class="about__wrapper">
+          <div class="about__content-box">
+            <h3 class="about__heading">Who we work with</h3>
+
+            <p class="about__text">
+              Today, millions of people around the world have successfully connected their accounts to apps they love
+              using our API. We provide developers with the tools they need to create easy and accessible experiences
+              for their users.
+            </p>
+
+            <a class="about__aboutus-link" href="#">About Us</a>
+          </div>
+
+          <ul class="about__list">
+            <li class="about__item">
+              <a class="about__company-link" href="https://www.tesla.com/">
+                <img class="about__company-logo" src="./img/Tesla.png" alt="Tesla-logo" width="129" height="17">
+              </a>
+            </li>
+
+            <li class="about__item">
+              <a class="about__company-link" href="https://www.microsoft.com/en-us/">
+                <img class="about__company-logo" src="./img/Microsoft.png" alt="Microsoft-logo" width="145" height="31">
+              </a>
+            </li>
+
+            <li class="about__item">
+              <a class="about__company-link" href="https://www.hp.com/us-en/home.html">
+                <img class="about__company-logo" src="./img/hp.png" alt="HP-logo" width="140" height="27">
+              </a>
+            </li>
+
+            <li class="about__item">
+              <a class="about__company-link" href="https://www.oracle.com/index.html">
+                <img class="about__company-logo" src="./img/Oracle.png" alt="Oracle-logo" width="131" height="17">
+              </a>
+            </li>
+
+            <li class="about__item">
+              <a class="about__company-link" href="https://www.google.com/">
+                <img class="about__company-logo" src="./img/google.png" alt="Google-logo" width="95" height="33">
+              </a>
+            </li>
+
+            <li class="about__item">
+              <a class="about__company-link" href="https://www.nvidia.com/ru-ru/">
+                <img class="about__company-logo" src="./img/nvidia.png" alt="Nvidia-logo" width="137" height="26">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!--============================================= SECTION EASY TO EMPLEMENT =============================================-->
+    <section class="easy-to-emplement">
+      <div class="container">
+        <div class="easy-to-emplement__wrapper">
+          <img class="easy-to-emplement__code-img" src="./img/code-of-form.png" alt="Code-img" width="445" height="284">
+
+          <div class="easy-to-emplement__emplement-content">
+            <h3 class="easy-to-emplement__heading">Easy to implement</h3>
+
+            <p class="easy-to-emplement__text">
+              Our API comes with just a few lines of code. You’ll be up and running in no time. We built our documentation page to integrate payments functionality with ease.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--============================================= SECTION SIMPLE UI & UX =============================================-->
+    <section class="simple-ui-ux">
+      <div class="container">
+        <div class="simple-ui-ux__wrapper">
+          <div class="simple-ui-ux__content">
+            <h3 class="simple-ui-ux__heading">Simple UI & UX</h3>
+
+            <p class="simple-ui-ux__text">
+              Our pre-built form is easy to integrate in your app or website’s checkout flow and designed to optimize conversion.
+            </p>
+          </div>
+
+          <img class="simple-ui-ux__phone-img" src="./img/Phone-Dollar.png" alt="Phone-dollar" width="283" height="500">
+          <img class="simple-ui-ux__phone-img" src="./img/Phone-dismiss.png" alt="Phone-dismiss" width="283" height="500">
+        </div>
+      </div>
+    </section>
+
+    <!--============================================= SECTION OUR ADVANTAGES =============================================-->
+    <section class="our-advantages">
+      <div class="container">
+        <div class="our-advantages__wrapper">
+          <ul class="our-advantages__list">
+            <li class="our-advantages__item">
+              <h4 class="our-advantages__heading">Personal Finances</h4>
+              <p class="our-advantages__text">
+                Consolidate financial data from multiple sources and categorize transactions up to 2 years of history. Analyze reports to reconcile activities in your account. 
+              </p>
+            </li>
+
+            <li class="our-advantages__item">
+              <h4 class="our-advantages__heading">Banking & Coverage</h4>
+              <p class="our-advantages__text">
+                With our platform, you can speed up account onboarding and support ongoing payments for checking, savings, credit card, and brokerage accounts.
+              </p>
+            </li>
+
+            <li class="our-advantages__item">
+              <h4 class="our-advantages__heading">Consumer Payments</h4>
+              <p class="our-advantages__text">
+                It’s easier to set up secure bank payments with us through a flow designed with the user experience in mind. Customers could instantly authenticate their account.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!--============================================= SECTION READY TO START =============================================-->
+    <section class="ready-to-start">
+      <div class="container">
+        <div class="ready-to-start__wrapper">
+          <h3 class="ready-to-start__heading">Ready to start?</h3>
+
+          <form class="form" action="https://echo.htmlacademy.ru" method="POST" target="_blank">
+            <label class="form__label" for="email">
+              <input class="form__input" type="email" name="email" placeholder="Enter email address" required
+                autocomplete="off">
+              <button class="form__submit-btn" type="submit">Schedule a Demo</button>
+            </label>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- SITE FOOTER -->
-  <footer>
+  <!--============================================= SITE FOOTER =============================================-->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__list-box">
+          <a class="footer__logo-link" href="./index.html">
+              <img class="footer__logo-img" src="./img/PayApi-logo.svg" alt="footer-logo" width="134" height="37">
+          </a>
 
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="footer__link">Pricing</a>
+            </li>
+            
+            <li class="footer__item">
+              <a href="footer__link">About</a>
+            </li>
+            
+            <li class="footer__item">
+              <a href="footer__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="https://www.facebook.com/">
+              <img src="./img/facebook-logo.svg" alt="facebook">
+            </a>
+          </li>
+          
+          <li class="footer__item">
+            <a href="https://www.twitter.com/">
+              <img src="./img/twitter-logo.svg" alt="twitter">
+            </a>
+          </li>
+          
+          <li class="footer__item">
+            <a href="https://www.linkedin.com/">
+              <img src="./img/linkedin-logo.svg" alt="facebook">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </footer>
 </body>
-
 </html>
